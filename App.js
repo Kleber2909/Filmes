@@ -21,5 +21,5 @@ const RootStack = createStackNavigator({
   Favoritos: Favoritos,
   DetalhesMovie: DetalhesMovie,
 }, {
-  initialRouteName: "ListMovies"
+  initialRouteName: "Home"
 });
