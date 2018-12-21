@@ -11,7 +11,7 @@ export default class Home extends React.Component {
     propsApp = props;
     this.state = {email: '', senha: '' };
   }
-  
+   
   static navigationOptions = {
     title: 'Login',
   };
