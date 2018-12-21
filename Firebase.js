@@ -63,8 +63,7 @@ let app = firebase.initializeApp({
         title = movie.title;
         overview = movie.overview;
         poster_path = movie.poster_path;
-//        await firebase.database().ref('favoritos/'+uID+'/').set({
-        await firebase.database().ref('favoritos/qyzCgsfnH3dUc9KYiFRHl1gaLX33/' + movie.id).set({            
+        await firebase.database().ref('favoritos/'+uID+'/' + movie.id).set({        
             id,
             title,
             overview,

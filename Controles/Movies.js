@@ -39,8 +39,7 @@ export default class Movies extends React.Component {
 
    getDataFirebase() {
      try{
-      //let itemsRef = db.ref('/favoritos').child(uID);
-      let dbRef = db.ref('/favoritos').child('qyzCgsfnH3dUc9KYiFRHl1gaLX33');
+      let dbRef = db.ref('/favoritos').child(uID);
       dbRef.on('value', (snapshot) => {
         try{
           console.log("filmes: ", snapshot.val());
